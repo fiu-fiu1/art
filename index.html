@@ -7,53 +7,48 @@
         body {
             background-color: #ADD8E6; 
             margin: 0;
-            padding: 15px;
+            padding: 20px;
             font-family: 'Arial Black', sans-serif;
             text-align: center;
         }
 
-        /* Kolorowy napis */
+        /* Twój kolorowy napis */
+        .napis { font-size: 3rem; margin-bottom: 20px; text-shadow: 2px 2px 4px rgba(0,0,0,0.1); }
         .w1 { color: #FF69B4; } .w2 { color: #FFD700; } 
         .w3 { color: #9370DB; } .w4 { color: #FF4500; } .w5 { color: #00FF00; }
-
-        .napis {
-            font-size: 2.8rem;
-            margin-bottom: 20px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
-        }
 
         .linki { margin-bottom: 30px; }
         .linki a {
             text-decoration: none;
             color: #333;
             background-color: #FFD700;
-            padding: 8px 15px;
+            padding: 10px 20px;
             border-radius: 20px;
             margin: 5px;
             font-weight: bold;
             display: inline-block;
         }
 
-        /* Galeria - SZTYWNY UKŁAD */
+        /* Galeria - dwa zdjęcia obok siebie */
         .kontener {
             display: flex;
             justify-content: center;
-            gap: 10px;
+            gap: 15px;
             max-width: 1200px;
             margin: 0 auto;
         }
 
-        .zdjecie-box {
-            width: 48%; /* Dwa zdjęcia zajmują prawie po połowie strony */
+        .zdjecie {
+            width: 48%; 
         }
 
-        .zdjecie-box img {
+        .zdjecie img {
             width: 100%;
-            height: 400px; /* Wszystkie będą równe */
+            height: 450px; 
             object-fit: cover;
-            border: 6px solid white;
-            border-radius: 15px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            border: 8px solid white;
+            border-radius: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
         }
     </style>
 </head>
@@ -70,11 +65,11 @@
     </div>
 
     <div class="kontener">
-        <div class="zdjecie-box">
+        <div class="zdjecie">
             <img src="wieloryb.pl" alt="Wieloryb">
         </div>
-        <div class="zdjecie-box">
-            <img src="fiu fiu broszka.jpg" alt="Broszka">
+        <div class="zdjecie">
+            <img src="broszka.jpg" alt="Broszka">
         </div>
     </div>
 
