@@ -3,64 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Moja Galeria Art</title>
+    <title>fiu-fiu-art</title>
     <style>
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #ffffff;
-            color: #333;
-            margin: 0;
+            background-color: white; /* Białe tło */
             display: flex;
-            flex-direction: column;
+            justify-content: center;
             align-items: center;
-            min-height: 100vh;
-        }
-        header {
-            margin: 50px 0;
+            height: 100vh; /* Środek ekranu w pionie */
+            margin: 0;
+            font-family: Arial, sans-serif;
             text-align: center;
         }
+
         h1 {
-            font-weight: 300;
-            letter-spacing: 5px;
-            text-transform: uppercase;
-            border-bottom: 2px solid #eee;
-            padding-bottom: 10px;
+            font-size: 3rem;
+            font-weight: bold;
         }
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            width: 80%;
-            max-width: 1000px;
+
+        .blue {
+            color: #0000FF; /* Niebieski */
         }
-        .art-card {
-            background: #f9f9f9;
-            height: 300px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border: 1px solid #eee;
-            color: #ccc;
-            transition: 0.3s;
-        }
-        .art-card:hover {
-            border-color: #bbb;
-            color: #999;
+
+        .gold {
+            color: #FFD700; /* Złoty */
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <h1>Moja Galeria</h1>
-        <p>Miejsce na Twoją twórczość</p>
-    </header>
-
-    <div class="gallery">
-        <div class="art-card">Tu będzie Twój obraz 1</div>
-        <div class="art-card">Tu będzie Twój obraz 2</div>
-        <div class="art-card">Tu będzie Twój obraz 3</div>
-    </div>
+    <h1>
+        <span class="blue">Witaj</span> 
+        <span class="gold">Na Stronie fiu-fiu-art</span>
+    </h1>
 
 </body>
 </html>
