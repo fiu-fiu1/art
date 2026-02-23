@@ -6,8 +6,7 @@
     <title>fiu-fiu-art</title>
     <style>
         body {
-            /* Błękitne tło */
-            background-color: #ADD8E6; 
+            background-color: #ADD8E6; /* Błękitne tło */
             margin: 0;
             font-family: 'Arial Black', sans-serif;
             display: flex;
@@ -19,13 +18,18 @@
         header {
             margin-top: 40px;
             text-align: center;
+            line-height: 1.2;
         }
 
-        /* Jasnoróżowy napis */
+        /* Kolorowy napis - każda część inaczej */
+        .kolor1 { color: #FF69B4; text-shadow: 2px 2px 0px white; } /* Różowy */
+        .kolor2 { color: #FFD700; text-shadow: 2px 2px 0px #333; }  /* Żółty */
+        .kolor3 { color: #9370DB; text-shadow: 2px 2px 0px white; } /* Fioletowy */
+        .kolor4 { color: #FF4500; text-shadow: 2px 2px 0px white; } /* Pomarańczowy */
+
         .napis-glowny {
-            color: #FFB6C1; 
-            font-size: 3rem;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+            font-size: 3.5rem;
+            letter-spacing: 2px;
         }
 
         .socials {
@@ -36,27 +40,17 @@
             margin: 30px 0;
         }
 
-        /* Żółte przyciski linków */
         .socials a {
             text-decoration: none;
             color: #333;
             background-color: #FFD700;
             padding: 10px 25px;
             border-radius: 30px;
-            font-size: 1.1rem;
-            transition: 0.3s;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            font-weight: bold;
         }
 
-        .socials a:hover {
-            transform: scale(1.1);
-            background-color: white;
-        }
-
-        /* Galeria - dwa zdjęcia obok siebie */
         .gallery {
             display: grid;
-            /* To sprawia, że są 2 kolumny, a na telefonie 1 */
             grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
             gap: 25px;
             width: 90%;
@@ -66,35 +60,14 @@
 
         .gallery img {
             width: 100%;
-            height: 450px; /* Stała wysokość, żeby zdjęcia były równe */
+            height: 500px; 
             object-fit: cover; 
             border-radius: 25px;
             border: 8px solid white;
             box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-            transition: 0.4s;
-        }
-
-        .gallery img:hover {
-            transform: translateY(-10px);
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <div class="napis-glowny">Witaj na fiu-fiu-art</div>
-    </header>
-
-    <div class="socials">
-        <a href="https://instagram.com/fiu_fiu_art" target="_blank">ig/fiu_fiu_art</a>
-        <a href="https://www.facebook.com/profile.php?id=100057163045952" target="_blank">fc/fiu fiu art</a>
-    </div>
-
-    <div class="gallery">
-        <img src="wieloryb.pl" alt="Mój wieloryb">
-        
-        <img src="broszka.jpg" alt="Moja nowa praca">
-    </div>
-
-</body>
-</html>
+    <header class="napis-
