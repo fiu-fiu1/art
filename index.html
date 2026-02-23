@@ -5,28 +5,39 @@
     <title>fiu-fiu-art</title>
     <style>
         body {
-            background-color: #ADD8E6; 
+            /* Błękitny przechodzący w jasny róż */
+            background: linear-gradient(180deg, #ADD8E6 0%, #FFB6C1 100%);
+            background-attachment: fixed; /* Tło nie ucieka przy przewijaniu */
             margin: 0;
             padding: 20px;
             font-family: 'Arial Black', sans-serif;
             text-align: center;
+            min-height: 100vh;
         }
 
-        /* Twój kolorowy napis */
-        .napis { font-size: 3rem; margin-bottom: 20px; text-shadow: 2px 2px 4px rgba(0,0,0,0.1); }
-        .w1 { color: #FF69B4; } .w2 { color: #FFD700; } 
-        .w3 { color: #9370DB; } .w4 { color: #FF4500; } .w5 { color: #00FF00; }
+        /* Kolorowy napis */
+        .napis { 
+            font-size: 3rem; 
+            margin-bottom: 20px; 
+            text-shadow: 2px 2px 4px rgba(255,255,255,0.5); 
+        }
+        .w1 { color: #FF1493; } /* Mocny róż */
+        .w2 { color: #FFD700; } /* Żółty */
+        .w3 { color: #8A2BE2; } /* Fiolet */
+        .w4 { color: #FF4500; } /* Pomarańcz */
+        .w5 { color: #32CD32; } /* Zieleń */
 
         .linki { margin-bottom: 30px; }
         .linki a {
             text-decoration: none;
             color: #333;
-            background-color: #FFD700;
+            background-color: rgba(255, 215, 0, 0.8); /* Lekko przezroczysty żółty */
             padding: 10px 20px;
             border-radius: 20px;
             margin: 5px;
             font-weight: bold;
             display: inline-block;
+            border: 2px solid white;
         }
 
         /* Galeria - dwa zdjęcia obok siebie */
@@ -48,7 +59,7 @@
             object-fit: cover;
             border: 8px solid white;
             border-radius: 20px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
         }
     </style>
 </head>
