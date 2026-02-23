@@ -7,78 +7,75 @@
         body {
             background-color: #ADD8E6; 
             margin: 0;
-            padding: 10px;
+            padding: 15px;
             font-family: 'Arial Black', sans-serif;
             text-align: center;
         }
 
         /* Kolorowy napis */
-        .witaj { color: #FF69B4; } 
-        .na { color: #FFD700; }    
-        .fiu1 { color: #9370DB; }  
-        .fiu2 { color: #FF4500; }  
-        .art { color: #00FF00; }   
+        .w1 { color: #FF69B4; } .w2 { color: #FFD700; } 
+        .w3 { color: #9370DB; } .w4 { color: #FF4500; } .w5 { color: #00FF00; }
 
-        .napis-glowny {
-            font-size: 2.5rem;
-            margin: 20px 0;
+        .napis {
+            font-size: 2.8rem;
+            margin-bottom: 20px;
             text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
         }
 
-        .socials {
-            margin-bottom: 20px;
-        }
-
-        .socials a {
+        .linki { margin-bottom: 30px; }
+        .linki a {
             text-decoration: none;
             color: #333;
             background-color: #FFD700;
             padding: 8px 15px;
             border-radius: 20px;
-            margin: 0 5px;
-            font-size: 0.9rem;
+            margin: 5px;
             font-weight: bold;
+            display: inline-block;
         }
 
-        /* Galeria - wymuszamy dwa obok siebie */
-        .gallery {
+        /* Galeria - SZTYWNY UKŁAD */
+        .kontener {
             display: flex;
             justify-content: center;
-            gap: 15px;
-            max-width: 1000px;
+            gap: 10px;
+            max-width: 1200px;
             margin: 0 auto;
         }
 
-        .gallery img {
-            /* To jest kluczowe: 45% szerokości i stała wysokość */
-            width: 45%; 
-            height: 350px; 
-            object-fit: cover; /* Zdjęcie wypełni ramkę bez rozciągania */
+        .zdjecie-box {
+            width: 48%; /* Dwa zdjęcia zajmują prawie po połowie strony */
+        }
+
+        .zdjecie-box img {
+            width: 100%;
+            height: 400px; /* Wszystkie będą równe */
+            object-fit: cover;
+            border: 6px solid white;
             border-radius: 15px;
-            border: 5px solid white;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
         }
     </style>
 </head>
 <body>
 
-    <div class="napis-glowny">
-        <span class="witaj">Witaj</span> 
-        <span class="na">Na</span> 
-        <span class="fiu1">fiu</span> 
-        <span class="fiu2">fiu</span> 
-        <span class="art">Art</span>
+    <div class="napis">
+        <span class="w1">Witaj</span> <span class="w2">Na</span> 
+        <span class="w3">fiu</span> <span class="w4">fiu</span> <span class="w5">Art</span>
     </div>
 
-    <div class="socials">
+    <div class="linki">
         <a href="https://instagram.com/fiu_fiu_art" target="_blank">Instagram</a>
         <a href="https://www.facebook.com/profile.php?id=100057163045952" target="_blank">Facebook</a>
     </div>
 
-    <div class="gallery">
-        <img src="wieloryb.pl" alt="Wieloryb">
-        
-        <img src="fiu fiu broszka.jpg" alt="Broszka">
+    <div class="kontener">
+        <div class="zdjecie-box">
+            <img src="wieloryb.pl" alt="Wieloryb">
+        </div>
+        <div class="zdjecie-box">
+            <img src="fiu fiu broszka.jpg" alt="Broszka">
+        </div>
     </div>
 
 </body>
