@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>fiu fiu Art</title>
+    <title>fiu-fiu-art</title>
     <style>
         body {
-            /* Błękitne tło z żółtym akcentem na dole */
-            background: linear-gradient(180deg, #ADD8E6 0%, #ADD8E6 85%, #FFD700 100%);
+            /* Błękitne tło z żółtym akcentem na samym dole */
+            background: linear-gradient(180deg, #ADD8E6 0%, #ADD8E6 90%, #FFD700 100%);
             margin: 0;
             font-family: 'Arial Black', sans-serif;
             display: flex;
@@ -18,64 +18,71 @@
 
         /* Nagłówek - Jasny różowy */
         header {
-            margin-top: 50px;
+            margin-top: 40px;
             text-align: center;
         }
-        .napis {
+        .napis-glowny {
             color: #FFB6C1; /* Jasny różowy */
-            font-size: 3.5rem;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+            font-size: 3rem;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+            margin-bottom: 10px;
         }
 
-        /* Social Media - Żółte połączenie */
+        /* Sekcja linków (Social Media) */
         .socials {
             width: 90%;
+            max-width: 1000px;
             display: flex;
             justify-content: space-between;
             margin: 20px 0;
-            font-size: 1.2rem;
         }
         .socials a {
             text-decoration: none;
             color: #333;
-            background-color: #FFD700; /* Żółte tło pod linkami */
-            padding: 5px 15px;
-            border-radius: 20px;
+            background-color: rgba(255, 255, 255, 0.7);
+            padding: 8px 15px;
+            border-radius: 15px;
+            font-size: 1rem;
+            border: 2px solid #FFD700;
             transition: 0.3s;
         }
         .socials a:hover {
-            transform: scale(1.1);
-            background-color: white;
+            background-color: #FFD700;
+            transform: translateY(-3px);
         }
 
-        /* Zdjęcie wieloryba */
+        /* Galeria zdjęć */
         .gallery {
-            margin-top: 20px;
-            width: 85%;
-            max-width: 700px;
-            padding-bottom: 50px;
+            width: 90%;
+            max-width: 800px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            padding-bottom: 60px;
         }
         .gallery img {
             width: 100%;
-            border-radius: 20px;
-            border: 5px solid white;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            border-radius: 25px;
+            border: 6px solid white;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
         }
     </style>
 </head>
 <body>
 
     <header>
-        <div class="napis">Witaj na fiu-fiu-art</div>
+        <div class="napis-glowny">Witaj na fiu-fiu-art</div>
     </header>
 
     <div class="socials">
         <a href="https://instagram.com/fiu_fiu_art" target="_blank">ig/fiu_fiu_art</a>
-        <a href="https://www.facebook.com/search/top?q=fiu%20fiu%20art%20katarzyna%20misiewicz" target="_blank">fc/fiu fiu art</a>
+        <a href="https://www.facebook.com/profile.php?id=100057163045952" target="_blank">fc/fiu fiu art</a>
     </div>
 
     <div class="gallery">
-        <img src="wieloryb.pl" alt="Mój wieloryb">
+        <img src="wieloryb.pl" alt="Wieloryb">
+        
+        <img src="broszka.jpg" alt="Nowa praca">
     </div>
 
 </body>
