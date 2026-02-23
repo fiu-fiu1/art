@@ -6,58 +6,72 @@
     <title>fiu-fiu-art</title>
     <style>
         body {
-            background-color: white;
+            /* Błękitne tło z żółtym akcentem na dole */
+            background: linear-gradient(180deg, #ADD8E6 0%, #ADD8E6 85%, #FFD700 100%);
             margin: 0;
             font-family: 'Arial Black', sans-serif;
             display: flex;
             flex-direction: column;
             align-items: center;
+            min-height: 100vh;
         }
 
-        /* Niebieska pętla - Nagłówek */
-        .header-box {
+        /* Nagłówek - Jasny różowy */
+        header {
             margin-top: 50px;
             text-align: center;
         }
-        .witaj { color: #0000FF; font-size: 3rem; }
-        .reszta { color: #FFD700; font-size: 3rem; }
+        .napis {
+            color: #FFB6C1; /* Jasny różowy */
+            font-size: 3.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
 
-        /* Żółta pętla - Linki po bokach */
+        /* Social Media - Żółte połączenie */
         .socials {
-            width: 80%;
+            width: 90%;
             display: flex;
             justify-content: space-between;
             margin: 20px 0;
             font-size: 1.2rem;
         }
-        .socials a { text-decoration: none; color: black; }
+        .socials a {
+            text-decoration: none;
+            color: #333;
+            background-color: #FFD700; /* Żółte tło pod linkami */
+            padding: 5px 15px;
+            border-radius: 20px;
+            transition: 0.3s;
+        }
+        .socials a:hover {
+            transform: scale(1.1);
+            background-color: white;
+        }
 
-        /* Różowa pętla - Twoje zdjęcia */
+        /* Zdjęcie wieloryba */
         .gallery {
-            width: 90%;
-            max-width: 800px;
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-            align-items: center;
+            margin-top: 20px;
+            width: 85%;
+            max-width: 700px;
+            padding-bottom: 50px;
         }
         .gallery img {
             width: 100%;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            border-radius: 20px;
+            border: 5px solid white;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
         }
     </style>
 </head>
 <body>
 
-    <div class="header-box">
-        <span class="witaj">Witaj</span> 
-        <span class="reszta">na fiu-fiu-art</span>
-    </div>
+    <header>
+        <div class="napis">Witaj na fiu-fiu-art</div>
+    </header>
 
     <div class="socials">
-        <a href="https://instagram.com/fiu_fiu_art">ig/fiu_fiu_art</a>
-        <a href="#">fc/fiu fiu art</a>
+        <a href="https://instagram.com/fiu_fiu_art" target="_blank">ig/fiu_fiu_art</a>
+        <a href="https://www.facebook.com/search/top?q=fiu%20fiu%20art%20katarzyna%20misiewicz" target="_blank">fc/fiu fiu art</a>
     </div>
 
     <div class="gallery">
