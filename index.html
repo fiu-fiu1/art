@@ -5,9 +5,9 @@
     <title>fiu-fiu-art</title>
     <style>
         body {
-            /* Błękitny przechodzący w jasny róż */
+            /* Błękitno-różowe tło */
             background: linear-gradient(180deg, #ADD8E6 0%, #FFB6C1 100%);
-            background-attachment: fixed; /* Tło nie ucieka przy przewijaniu */
+            background-attachment: fixed;
             margin: 0;
             padding: 20px;
             font-family: 'Arial Black', sans-serif;
@@ -15,51 +15,54 @@
             min-height: 100vh;
         }
 
-        /* Kolorowy napis */
+        /* Słoneczny Napis - Opcja nr 2 */
         .napis { 
-            font-size: 3rem; 
-            margin-bottom: 20px; 
-            text-shadow: 2px 2px 4px rgba(255,255,255,0.5); 
+            font-size: 3.5rem; 
+            margin-bottom: 25px; 
+            /* Delikatny blask wokół liter */
+            text-shadow: 0 0 15px rgba(255, 215, 0, 0.6), 2px 2px 4px rgba(0,0,0,0.1); 
         }
-        .w1 { color: #FF1493; } /* Mocny róż */
-        .w2 { color: #FFD700; } /* Żółty */
-        .w3 { color: #8A2BE2; } /* Fiolet */
-        .w4 { color: #FF4500; } /* Pomarańcz */
-        .w5 { color: #32CD32; } /* Zieleń */
+        
+        /* Kolory zachodzącego słońca i złota */
+        .w1 { color: #FF8C00; } /* Ciemny pomarańcz */
+        .w2 { color: #FFA500; } /* Pomarańcz */
+        .w3 { color: #FFD700; } /* Złoty */
+        .w4 { color: #DAA520; } /* Złoty brąz */
+        .w5 { color: #F0E68C; } /* Piaskowy żółty */
 
         .linki { margin-bottom: 30px; }
         .linki a {
             text-decoration: none;
             color: #333;
-            background-color: rgba(255, 215, 0, 0.8); /* Lekko przezroczysty żółty */
-            padding: 10px 20px;
-            border-radius: 20px;
-            margin: 5px;
+            background-color: #FFD700;
+            padding: 10px 25px;
+            border-radius: 30px;
+            margin: 0 10px;
             font-weight: bold;
-            display: inline-block;
-            border: 2px solid white;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: 0.3s;
         }
+
+        .linki a:hover { transform: scale(1.1); background-color: white; }
 
         /* Galeria - dwa zdjęcia obok siebie */
         .kontener {
             display: flex;
             justify-content: center;
-            gap: 15px;
+            gap: 20px;
             max-width: 1200px;
             margin: 0 auto;
         }
 
-        .zdjecie {
-            width: 48%; 
-        }
+        .zdjecie { width: 48%; }
 
         .zdjecie img {
             width: 100%;
             height: 450px; 
             object-fit: cover;
-            border: 8px solid white;
-            border-radius: 20px;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+            border: 10px solid white;
+            border-radius: 25px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
         }
     </style>
 </head>
