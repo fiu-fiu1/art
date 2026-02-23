@@ -6,8 +6,8 @@
     <title>fiu-fiu-art</title>
     <style>
         body {
-            /* Błękitne tło z żółtym akcentem na samym dole */
-            background: linear-gradient(180deg, #ADD8E6 0%, #ADD8E6 90%, #FFD700 100%);
+            /* Błękitne tło */
+            background: #ADD8E6;
             margin: 0;
             font-family: 'Arial Black', sans-serif;
             display: flex;
@@ -16,19 +16,18 @@
             min-height: 100vh;
         }
 
-        /* Nagłówek - Jasny różowy */
         header {
             margin-top: 40px;
             text-align: center;
         }
+
+        /* Jasny różowy napis */
         .napis-glowny {
-            color: #FFB6C1; /* Jasny różowy */
+            color: #FFB6C1;
             font-size: 3rem;
-            text-shadow: 2px 2px 5px rgba(0,0,0,0.2);
-            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
         }
 
-        /* Sekcja linków (Social Media) */
         .socials {
             width: 90%;
             max-width: 1000px;
@@ -36,35 +35,35 @@
             justify-content: space-between;
             margin: 20px 0;
         }
+
+        /* Żółte przyciski social media */
         .socials a {
             text-decoration: none;
             color: #333;
-            background-color: rgba(255, 255, 255, 0.7);
-            padding: 8px 15px;
-            border-radius: 15px;
+            background-color: #FFD700;
+            padding: 10px 20px;
+            border-radius: 25px;
             font-size: 1rem;
-            border: 2px solid #FFD700;
             transition: 0.3s;
         }
-        .socials a:hover {
-            background-color: #FFD700;
-            transform: translateY(-3px);
+
+        /* Galeria - dwa zdjęcia obok siebie */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            width: 90%;
+            max-width: 1000px;
+            padding-bottom: 50px;
         }
 
-        /* Galeria zdjęć */
-        .gallery {
-            width: 90%;
-            max-width: 800px;
-            display: flex;
-            flex-direction: column;
-            gap: 30px;
-            padding-bottom: 60px;
-        }
         .gallery img {
             width: 100%;
-            border-radius: 25px;
-            border: 6px solid white;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            height: 400px;
+            object-fit: cover; /* Dzięki temu zdjęcia będą równe */
+            border-radius: 20px;
+            border: 5px solid white;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
         }
     </style>
 </head>
