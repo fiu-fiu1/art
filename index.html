@@ -6,36 +6,71 @@
     <title>fiu-fiu-art</title>
     <style>
         body {
-            background-color: white; /* Białe tło */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh; /* Środek ekranu w pionie */
+            background-color: white;
             margin: 0;
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Niebieska pętla - Nagłówek */
+        header {
+            margin-top: 50px;
             text-align: center;
         }
+        .witaj { color: #0000FF; font-size: 3.5rem; font-weight: bold; }
+        .reszta { color: #FFD700; font-size: 3.5rem; font-weight: bold; text-shadow: 1px 1px 2px rgba(0,0,0,0.1); }
 
-        h1 {
-            font-size: 3rem;
+        /* Żółta pętla - Social Media */
+        .socials {
+            width: 80%;
+            max-width: 1000px;
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 0 40px 0;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
             font-weight: bold;
         }
+        .socials a { text-decoration: none; color: #555; transition: 0.3s; }
+        .socials a:hover { color: #FFD700; }
 
-        .blue {
-            color: #0000FF; /* Niebieski */
+        /* Różowa pętla - Galeria zdjęć */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            width: 85%;
+            max-width: 1200px;
+            padding-bottom: 50px;
         }
-
-        .gold {
-            color: #FFD700; /* Złoty */
+        .photo {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
         }
+        .photo:hover { transform: scale(1.03); }
     </style>
 </head>
 <body>
 
-    <h1>
-        <span class="blue">Witaj</span> 
-        <span class="gold">Na Stronie fiu-fiu-art</span>
-    </h1>
+    <header>
+        <span class="witaj">Witaj</span> 
+        <span class="reszta">na fiu-fiu-art</span>
+    </header>
+
+    <div class="socials">
+        <a href="https://instagram.com/fiu_fiu_art" target="_blank">ig/fiu_fiu_art</a>
+        <a href="https://facebook.com/fiu_fiu_art" target="_blank">fc/fiu fiu art</a>
+    </div>
+
+    <div class="gallery">
+        <img src="https://picsum.photos/400/500?random=1" alt="Art 1" class="photo">
+        <img src="https://picsum.photos/400/500?random=2" alt="Art 2" class="photo">
+        <img src="https://picsum.photos/400/500?random=3" alt="Art 3" class="photo">
+    </div>
 
 </body>
 </html>
